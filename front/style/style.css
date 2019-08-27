@@ -1,0 +1,12 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.button button {
+    display: block;
+    height: 50px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 10px;
+}
