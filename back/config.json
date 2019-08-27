@@ -1,0 +1,48 @@
+{
+	"port": 80,
+	"host": "http://127.0.0.1:80/",
+	"keyJWT": "",
+	"cryptoAes": "",
+	"synonyms": "",
+	"back": "./",
+	"jwtSecret": "",
+    "botsMail": "",
+	"postgres": {
+		"host": "127.0.0.1",
+		"port": 5432,
+		"user": "",
+		"password": "",
+		"dbname": "",
+		"maxConnect": 100
+	},
+	"redis": {
+		"host": "127.0.0.1",
+		"port": 6379,
+		"password": "",
+		"dbname": 1,
+		"maxConnect": 100,
+		"prefix": "snatchbot.",
+		"maxAge": 900,
+		"idleTimeout": 900
+	},
+	"notify": {
+		"secure": ""
+	},
+	"ses": {
+		"endpoint": "",
+		"accessKeyID": "",
+		"secretAccessKey": ""
+	},
+	"email": {
+		"noreply": "noreply@snatchbot.me",
+		"technical": "technical@snatchbot.me"
+	},
+	"sitemap": {
+		"path": "/var/www/snatchbot-old-front/public/",
+		"domain": "snatchbot.me",
+		"time": {
+			"hh": 4,
+			"mm": 0
+		}
+	}
+}
