@@ -3,10 +3,8 @@
 	"host": "http://127.0.0.1:80/",
 	"keyJWT": "",
 	"cryptoAes": "",
-	"synonyms": "",
 	"back": "./",
 	"jwtSecret": "",
-    "botsMail": "",
 	"postgres": {
 		"host": "127.0.0.1",
 		"port": 5432,
@@ -25,24 +23,4 @@
 		"maxAge": 900,
 		"idleTimeout": 900
 	},
-	"notify": {
-		"secure": ""
-	},
-	"ses": {
-		"endpoint": "",
-		"accessKeyID": "",
-		"secretAccessKey": ""
-	},
-	"email": {
-		"noreply": "noreply@snatchbot.me",
-		"technical": "technical@snatchbot.me"
-	},
-	"sitemap": {
-		"path": "/var/www/snatchbot-old-front/public/",
-		"domain": "snatchbot.me",
-		"time": {
-			"hh": 4,
-			"mm": 0
-		}
-	}
 }
