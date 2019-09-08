@@ -1,9 +1,7 @@
 {
-	"port": 80,
-	"host": "http://127.0.0.1:80/",
+	"port": 8080,
+	"host": "http://server/",
 	"keyJWT": "",
-	"cryptoAes": "",
-	"back": "./",
 	"jwtSecret": "",
 	"postgres": {
 		"host": "127.0.0.1",
@@ -17,10 +15,10 @@
 		"host": "127.0.0.1",
 		"port": 6379,
 		"password": "",
-		"dbname": 1,
+		"dbname": "",
 		"maxConnect": 100,
-		"prefix": "snatchbot.",
+		"prefix": "",
 		"maxAge": 900,
 		"idleTimeout": 900
-	},
+	}
 }

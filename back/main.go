@@ -1,15 +1,19 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
+	config "server/back/config"
 	route "server/back/route"
+	"strconv"
 )
 
 func main() {
-	//GetConfiguration()
+	config.GetServerConfig()
 	route.RouterFunc()
-	err := http.ListenAndServe(":8080", nil)
+	log.Print("Server start at port: ", config.ConfigData.Port)
+	err := http.ListenAndServe(fmt.Sprintf(":"+strconv.Itoa(config.ConfigData.Port)), nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
