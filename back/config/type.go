@@ -12,12 +12,11 @@ type ConfigurationDataStruct struct {
 
 // Postgres is a data type for postgresql configuration data
 type Postgres struct {
-	Host       string
-	Port       int
-	User       string
-	Password   string
-	DBName     string
-	MaxConnect int
+	Host     string
+	Port     int
+	User     string
+	Password string
+	DBName   string
 }
 
 // Redis is a data type for redis configuration data

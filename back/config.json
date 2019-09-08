@@ -6,10 +6,9 @@
 	"postgres": {
 		"host": "127.0.0.1",
 		"port": 5432,
-		"user": "",
+		"user": "Admin",
 		"password": "",
-		"dbname": "",
-		"maxConnect": 100
+		"dbname": "server"
 	},
 	"redis": {
 		"host": "127.0.0.1",
