@@ -1,6 +1,6 @@
 {
 	"port": 8080,
-	"host": "http://server/",
+	"host": "http://server.loc",
 	"keyJWT": "",
 	"jwtSecret": "",
 	"postgres": {
@@ -14,10 +14,9 @@
 		"host": "127.0.0.1",
 		"port": 6379,
 		"password": "",
-		"dbname": "",
-		"maxConnect": 100,
-		"prefix": "",
-		"maxAge": 900,
+		"dbname": 1,
+		"maxIdle": 80,
+		"maxActive": 12000,
 		"idleTimeout": 900
 	}
 }

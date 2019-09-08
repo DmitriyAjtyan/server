@@ -1,5 +1,7 @@
 package config
 
+import "time"
+
 // ConfigurationDataStruct is a data type for server configuration data
 type ConfigurationDataStruct struct {
 	Port      int
@@ -24,9 +26,8 @@ type Redis struct {
 	Host        string
 	Port        int
 	Password    string
-	DBName      string
-	MaxConnect  int
-	Prefix      string
-	MaxAge      int
-	IdleTimeout int
+	DBName      int
+	MaxIdle     int
+	MaxActive   int
+	IdleTimeout time.Duration
 }
